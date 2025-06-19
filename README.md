@@ -1,12 +1,49 @@
-# React + Vite
+# Dot & Cross Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect clone of the official [Dot & Cross Agency](https://www.dotandcross.agency) website, built using:
 
-Currently, two official plugins are available:
+- **HTML**
+- **Vanilla JavaScript**
+- **Tailwind CSS**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Fully responsive and mobile-friendly layout
+- Utility-first styling with Tailwind CSS
+- Interactive elements and animations with JavaScript
+- Clean and minimal design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+To view the project:
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/femilmirza/myproject.git
+   Open index.html in any browser
+Folder Structure
+bash
+Copy
+Edit
+myproject/
+├── index.html
+├── script.js
+├── style.css
+├── /assets
+└── /dist (if applicable)
+🛠 Tech Stack
+HTML5
+
+JavaScript (ES6+)
+
+Tailwind CSS
+
+🔗 Live Demo
+Coming soon...
+
+📄 License
+This project is for educational/research purposes only. No commercial use intended.
+
+🙋‍♂️ Author
+Femil Mirza
+GitHub Profile
