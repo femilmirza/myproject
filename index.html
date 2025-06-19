@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dot & Cross — Coming Soon</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font for Hero (Matching Dot & Cross) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Animation + Styling -->
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        overflow: hidden;
+      }
+
+      h2 {
+        font-family: 'Playfair Display', serif;
+      }
+
+      @keyframes fadeSlideRight {
+        0% {
+          opacity: 0;
+          transform: translateX(0);
+        }
+        30% {
+          opacity: 1;
+          transform: translateX(8px);
+        }
+        70% {
+          opacity: 1;
+          transform: translateX(8px);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(16px);
+        }
+      }
+
+      .wave-word {
+        animation: fadeSlideRight 3.5s ease-in-out infinite;
+        display: inline-block;
+        opacity: 0;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Floating Backgrounds */
+      @keyframes float1 {
+        0%, 100% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-20px) translateX(20px); }
+      }
+      @keyframes float2 {
+        0%, 100% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(20px) translateX(-10px); }
+      }
+      @keyframes float3 {
+        0%, 100% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-15px) translateX(15px); }
+      }
+
+      .float-1 { animation: float1 6s ease-in-out infinite; }
+      .float-2 { animation: float2 10s ease-in-out infinite; }
+      .float-3 { animation: float3 20s ease-in-out infinite; }
+    </style>
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center px-6 relative">
+    <!-- Floating Shapes -->
+    <img src="public/Vector_11_yro7bn.webp" alt="bg1" class="w-24 absolute top-10 left-6 opacity-30 float-1" />
+    <img src="public/Vector_13_awyxkg.webp" alt="bg2" class="w-20 absolute bottom-10 left-1/4 opacity-30 float-2" /> <!-- Smaller now -->
+    <img src="public/Vector_16_jdxm8h.webp" alt="bg3" class="w-52 absolute top-1/3 right-10 opacity-30 float-3" />
+
+    <main class="max-w-3xl w-full text-center z-10">
+      <!-- Logo -->
+      <h1 class="text-2xl font-semibold mb-10">Dot & Cross</h1>
+
+      <!-- Hero Text -->
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-light tracking-tight leading-snug text-gray-300 mb-6 flex flex-wrap gap-2 justify-center">
+        <span class="wave-word" style="animation-delay: 0s">We are</span>
+        <span class="wave-word" style="animation-delay: 0.2s">ready.</span>
+        <span class="wave-word" style="animation-delay: 0.4s">Website</span>
+        <span class="wave-word" style="animation-delay: 0.6s">is</span>
+        <span class="wave-word" style="animation-delay: 0.8s">on</span>
+        <span class="wave-word" style="animation-delay: 1s">its</span>
+        <span class="wave-word" style="animation-delay: 1.2s">way.</span>
+      </h2>
+
+      <!-- Email Form -->
+      <form class="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center w-full max-w-2xl mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="bg-transparent border-b border-white text-white placeholder-gray-400 px-6 py-2 w-full sm:w-[60%] focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="lowercase border border-white text-white px-6 py-3 tracking-wide text-sm font-light hover:bg-white hover:text-black transition text-center w-full sm:w-auto"
+        >
+          get notified when we're live
+        </button>
+      </form>
+
+      <!-- Socials and Contact -->
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400 w-full max-w-2xl mx-auto">
+        <!-- Social Icons -->
+        <div class="flex gap-4 text-xl">
+          <a href="https://instagram.com" target="_blank" class="hover:text-white" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="hover:text-white" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <!-- Contact Email -->
+        <p>
+          Say hi Meanwhile! •
+          <a href="mailto:hi@dotandcross.agency" class="underline hover:text-white">
+            hi@dotandcross.agency
+          </a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
