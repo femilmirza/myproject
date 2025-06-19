@@ -31,19 +31,18 @@ myproject/
 ├── style.css
 ├── /assets
 └── /dist (if applicable)
-🛠 Tech Stack
+
+## 🛠 Tech Stack
+
 HTML5
 
 JavaScript (ES6+)
 
 Tailwind CSS
 
-🔗 Live Demo
-Coming soon...
 
-📄 License
+# 📄 License
 This project is for educational/research purposes only. No commercial use intended.
 
-🙋‍♂️ Author
+# 🙋‍♂️ Author
 Femil Mirza
-GitHub Profile
